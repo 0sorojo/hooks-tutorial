@@ -5,8 +5,10 @@ const UStateArray = () => {
   const [people, setPeople] = useState(data);
 
   const removeItem = (id) => {
-    let newPeople = people.filter((person) => person.id !== id);
-    setPeople(newPeople);
+    setPeople((prevState) => {
+      let newPeople = prevState.filter((person) => person.id !== id);
+      return newPeople;
+    });
   };
 
   return (

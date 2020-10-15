@@ -2,6 +2,7 @@ import React from 'react';
 import UStateArray from '../Components/UStateArray';
 import UStateB from '../Components/UStateB';
 import UStateObj from '../Components/UStateObject';
+import UStateCounter from '../Components/UStateCounter';
 
 const UseStateBasics = () => {
   return (
@@ -10,6 +11,7 @@ const UseStateBasics = () => {
       <UStateB />
       <UStateArray />
       <UStateObj />
+      <UStateCounter />
     </div>
   );
 };
