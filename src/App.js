@@ -1,9 +1,10 @@
 import React from 'react';
+import USbasics from './Views/UseStateBasics';
 
 const App = () => {
   return (
-    <div>
-      <h1>i work</h1>
+    <div className='container'>
+      <USbasics />
     </div>
   );
 };
