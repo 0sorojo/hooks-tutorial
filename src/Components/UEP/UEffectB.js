@@ -1,13 +1,22 @@
 import React, { useState, useEffect } from 'react';
 
-// by default useEffect runs after every re-render
+// by default useEffect runs after every re-render without second parameter
+// second argument is an array of dependancies
+// if I only want the useEffect to run on the first render enter an empy array in the second argument
 
 const UEffectB = () => {
   const [value, setValue] = useState(0);
+
   useEffect(() => {
-    document.title = `New Messages(${value})`;
-  });
-  console.log('render componenent');
+    if (value >= 1) {
+      document.title = `New Messages(${value})`;
+    }
+  }, [value]);
+
+  useEffect(() => {
+    console.log('you had me at first render');
+  }, []);
+
   return (
     <>
       <h1>{value}</h1>
