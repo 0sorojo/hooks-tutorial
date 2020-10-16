@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { data } from '../assets/data';
+import { data } from '../../assets/data';
 
 const UStateArray = () => {
   const [people, setPeople] = useState(data);
