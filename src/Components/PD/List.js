@@ -1,11 +1,20 @@
 import React from 'react';
 import SinglePerson from './SinglePerson';
 
-const List = () => {
+const List = ({ people, removePerson }) => {
   return (
     <>
-      <h1>the List</h1>
-      <SinglePerson />
+      <div>
+        {people.map((person) => {
+          return (
+            <SinglePerson
+              key={person.id}
+              removePerson={removePerson}
+              {...person}
+            />
+          );
+        })}
+      </div>
     </>
   );
 };
