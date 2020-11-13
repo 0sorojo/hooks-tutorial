@@ -10,11 +10,12 @@ import USbasics from './Views/UseStateBasics';
 import CustomHookExample from './Views/CustomHookExample';
 import PropTypePractice from './Views/PropTypePractice';
 import ReactRouterPrac from './Views/ReactRouterPrac';
+import MemoUseMemoUC from './Views/MemoUseMemoUC';
 
 const App = () => {
   return (
     <div className='container'>
-      <ReactRouterPrac />
+      <MemoUseMemoUC />
     </div>
   );
 };
