@@ -7,11 +7,13 @@ import UseEffectPrac from './Views/UseEffectPrac';
 import UseReducerPrac from './Views/UseReducerPrac';
 import UseRefPrac from './Views/UseRefPrac';
 import USbasics from './Views/UseStateBasics';
+import CustomHookExample from './Views/CustomHookExample';
 
 const App = () => {
   return (
     <div className='container'>
       <UseContextPrac />
+      <CustomHookExample />
     </div>
   );
 };
