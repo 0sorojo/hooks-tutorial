@@ -8,12 +8,13 @@ import UseReducerPrac from './Views/UseReducerPrac';
 import UseRefPrac from './Views/UseRefPrac';
 import USbasics from './Views/UseStateBasics';
 import CustomHookExample from './Views/CustomHookExample';
+import PropTypePractice from './Views/PropTypePractice';
+import ReactRouterPrac from './Views/ReactRouterPrac';
 
 const App = () => {
   return (
     <div className='container'>
-      <UseContextPrac />
-      <CustomHookExample />
+      <ReactRouterPrac />
     </div>
   );
 };
