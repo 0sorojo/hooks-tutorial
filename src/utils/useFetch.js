@@ -5,6 +5,8 @@ export const useFetch = (url) => {
   const [products, setProducts] = useState([]);
   // add error state
 
+  // only create new function when function value changes
+
   const getProducts = useCallback(async () => {
     const response = await fetch(url);
     const products = await response.json();
